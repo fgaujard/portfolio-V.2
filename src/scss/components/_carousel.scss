@@ -1,0 +1,100 @@
+.carousel {
+  background-color: $text-color;
+  padding: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+  max-height: 50vh;
+  box-shadow:
+    inset 0 -2rem 1.5rem $primary-color-hover,
+    inset 0 2rem 1.5rem $primary-color-hover;
+
+  .slides {
+    display: flex;
+    justify-content: center;
+    transition: transform 3s;
+    overflow-x: hidden;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    width: calc(100% - 20rem);
+    transform: translateX(100%);
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 50vh;
+    }
+  }
+
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    position: absolute;
+    transition:
+      opacity 0.5s ease-out,
+      transform 0.8s ease-out;
+    color: $background-color;
+  }
+
+  .prev,
+  .next {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -3.2rem;
+    transform: translateY(-100%);
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $background-color;
+
+    &:hover {
+      background: $primary-color-hover;
+    }
+  }
+
+  .prev {
+    left: 4rem;
+  }
+
+  .next {
+    right: 4rem;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: $primary-color-hover;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+
+      &.active {
+        background-color: $primary-color;
+        transition: background-color 0.3s ease;
+      }
+    }
+  }
+}

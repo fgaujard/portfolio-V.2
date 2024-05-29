@@ -1,0 +1,59 @@
+.stickyNav .app-body {
+  margin-top: 52.297px;
+  overflow-x: hidden;
+}
+
+.app-body {
+  &_home {
+    min-height: calc(100vh - 52.297px);
+    overflow-x: hidden;
+  }
+
+  &_projects {
+    padding: 5vh 10rem 5rem;
+    transition: padding 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $text-color3;
+    overflow: hidden;
+  }
+
+  &_skills {
+    padding: 16rem 0 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5rem;
+  }
+
+  &_contact {
+    min-height: calc(100vh - 30rem);
+    padding: 6rem 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .app-body {
+    &_projects {
+      padding: 5vh 1rem 5rem;
+      transition: padding 0.3s;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+
+  div {
+    width: calc(100% - 20rem);
+    border-top: 1px solid $text-color3;
+  }
+}

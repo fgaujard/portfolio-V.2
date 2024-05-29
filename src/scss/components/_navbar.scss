@@ -1,0 +1,133 @@
+.comp-navbar {
+  z-index: 1000;
+  width: 100%;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_title {
+    z-index: 1001;
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    background-color: $background-color;
+    color: $primary-color;
+  }
+
+  &_menu {
+    width: 100%;
+    padding-top: 0.5rem;
+
+    display: flex;
+    justify-content: right;
+
+    border-bottom: 1px solid #4f4f4f;
+
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    background-color: $background-color;
+
+    a {
+      padding: 0.8rem 0.6rem 1rem 0.6rem;
+
+      text-decoration: none;
+      color: $text-color3;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .comp-navbar_menuCenter {
+      position: absolute;
+      display: flex;
+
+      gap: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: gap 0.3s;
+    }
+
+    .comp-navbar_underline {
+      position: absolute;
+      bottom: 0;
+
+      height: 5px;
+      border-radius: 5px 5px 0px 0px;
+      background-color: $primary-color;
+
+      transition:
+        transform 0.3s ease,
+        width 0.3s ease;
+    }
+
+    .comp-navbar_menuRight {
+      display: flex;
+
+      margin-right: 10rem;
+      gap: 2rem;
+      transition: margin 0.3s;
+    }
+  }
+
+  a.active {
+    color: $text-color;
+    font-weight: 600;
+  }
+}
+
+.comp-navbar_menu.sticky {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  backdrop-filter: blur(5px);
+  background-color: $glassnavbar;
+  box-shadow: 0 0.5rem 2rem $primary-color-hover;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 1170px) {
+  .comp-navbar {
+    .comp-navbar_menuRight {
+      margin-right: 1rem;
+      transition: margin 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .comp-navbar {
+    .comp-navbar_menuCenter {
+      gap: 1rem;
+      transition: gap 0.3s;
+    }
+  }
+
+  .comp-navbar_menu.sticky {
+    background-color: $background-color;
+    transition: background-color 0.3s;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .comp-navbar_menuRight {
+    display: none;
+    visibility: hidden;
+  }
+
+  .comp-navbar_menu.sticky {
+    background-color: $background-color;
+    transition: background-color 0.3s;
+  }
+}

@@ -1,0 +1,106 @@
+.article-skills {
+  padding: 5rem 2rem 2rem;
+  background-color: $text-color;
+  color: $background-color;
+  margin: 2rem;
+  border-radius: 2rem 2rem 5px 5px;
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 4px solid $primary-color;
+
+  img {
+    width: 150px;
+    height: 150px;
+    background-color: $text-color;
+    border: 2px solid $primary-color;
+    border-radius: 100%;
+    position: absolute;
+    transform: translateY(-11em);
+  }
+
+  &_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h1 {
+      font-size: 1rem;
+      padding: 0.4rem 0.5rem;
+      border: 1px solid $background-color;
+      border-radius: 0.6rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  &_block {
+    width: 100%;
+  }
+
+  &_subtitle {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  ul {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      cursor: pointer;
+      margin: 0.5rem 0.5rem 0 0;
+      padding: 6px 7px;
+      background-color: $primary-color-hover;
+      border-radius: 0.3rem;
+      font-size: 10px;
+      scale: 1;
+      transition: scale 0.3s;
+      transition:
+        color 0.3s,
+        background-color 0.3s,
+        border 0.3s;
+      border: 1px solid #ffffff00;
+
+      &:hover {
+        background-color: $text-color3;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        scale: 1.1;
+        transition: scale 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .article-skills {
+    width: 600px;
+    margin: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .article-skills {
+    ul {
+      li {
+        &:hover {
+          scale: 1;
+          background-color: $primary-color-hover;
+          border: 1px solid #ffffff00;
+          color: $background-color;
+        }
+      }
+    }
+  }
+}
