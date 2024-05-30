@@ -1,5 +1,3 @@
-import SearchEngineOpt from "./SEO";
-
 import Navbar from "./components/Navbar";
 
 import Projects from "./layouts/Projects";
@@ -13,7 +11,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function App() {
   return (
     <>
-      <SearchEngineOpt />
       <Navbar />
 
       <main className="app-body">
