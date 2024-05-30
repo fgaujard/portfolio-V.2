@@ -1,4 +1,4 @@
-import SearchEngineOpt from "./SEO";
+// import SearchEngineOpt from "./SEO";
 
 import Navbar from "./components/Navbar";
 
@@ -10,10 +10,14 @@ import Contact from "./layouts/Contact";
 import "./scss/main.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import snapshot from "./assets/snapshot.png";
+
+// Store the image URL in a global variable
+window.snapshotURL = `${import.meta.env.APP_URL}${snapshot}`;
+
 function App() {
   return (
     <>
-      <SearchEngineOpt />
       <Navbar />
 
       <main className="app-body">
