@@ -32,7 +32,7 @@ export default function Projects() {
       </Carousel>
       <div>
         <h2 className="title-home">Powerfull tools</h2>
-        <p className="subtitle-home">To make better experciences</p>
+        <p className="subtitle-home">To create better experciences</p>
         <LogoScroll />
       </div>
     </section>

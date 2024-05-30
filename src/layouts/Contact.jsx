@@ -4,7 +4,7 @@ import Resume from "../assets/Resume.pdf";
 export default function Contact() {
   return (
     <section id="contact" className="app-body_contact section-contact">
-      <h1>Let's connect us !</h1>
+      <h1>Let's connect !</h1>
       <p className="contact-subtitle">Send me a message</p>
       <article className="contact-card">
         <img src={ProfilePic} alt="Profile" loading="lazy" />
