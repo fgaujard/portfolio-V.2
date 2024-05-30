@@ -7,7 +7,7 @@ export default function SearchEngineOpt() {
     "@context": "http://schema.org",
     "@type": "Person",
     name: "Flavien Gaujard",
-    url: "https://flavien-gaujard.com",
+    url: "https://flavien-gaujard.fr",
     image: snapshot,
     sameAs: [
       "https://linkedin.com/in/flavien-gaujard",
@@ -43,7 +43,7 @@ export default function SearchEngineOpt() {
       />
       <meta
         property="og:image"
-        content={`https://flavien-gaujard.com${snapshot}`}
+        content={`https://flavien-gaujard.fr${snapshot}`}
       />
       <meta property="og:url" content="https://flavien-gaujard.com" />
       <meta property="og:type" content="website" />
@@ -60,7 +60,7 @@ export default function SearchEngineOpt() {
       />
       <meta
         name="twitter:image"
-        content={`https://flavien-gaujard.com${snapshot}`}
+        content={`https://flavien-gaujard.fr${snapshot}`}
       />
 
       <link rel="canonical" href="https://flavien-gaujard.fr" />
