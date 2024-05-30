@@ -1,101 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flavien Gaujard - Web Developer Portfolio</title>
-    <meta
-      name="description"
-      content="Explore the portfolio of Flavien Gaujard, a web developer based in Chartres, France. Discover his projects and skills in web development."
-    />
-    <meta
-      name="keywords"
-      content="web development, web developer, portfolio, Flavien Gaujard, Chartres, France, React, Javascript, CSS, HTML, Sassy, SCSS, French developer."
-    />
-
-    <!-- Open Graph meta tags for Facebook and LinkedIn -->
-    <meta
-      property="og:title"
-      content="Flavien Gaujard - Web Developer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Explore the portfolio of Flavien Gaujard, a web developer based in Chartres, France. Discover his projects and skills in web development."
-    />
-    <meta property="og:image" content="" id="og-image" />
-    <meta property="og:url" content="https://flavien-gaujard.fr" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card meta tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Flavien Gaujard - Web Developer Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore the portfolio of Flavien Gaujard, a web developer based in Chartres, France. Discover his projects and skills in web development."
-    />
-    <meta name="twitter:image" content="" id="twitter-image" />
-
-    <link rel="canonical" href="https://flavien-gaujard.fr" />
-
-    <!-- JSON-LD structured data -->
-    <script type="application/ld+json" id="structured-data">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Flavien Gaujard",
-        "url": "https://flavien-gaujard.fr",
-        "image": "",
-        "sameAs": [
-          "https://linkedin.com/in/flavien-gaujard",
-          "https://github.com/fgaujard"
-        ],
-        "jobTitle": "Web Developer",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Chartres",
-          "addressRegion": "Centre-Val de Loire",
-          "addressCountry": "France"
-        }
-      }
-    </script>
+    <title>Flavien GAUJARD | Fullstack Developer JS</title>
   </head>
   <body>
     <div id="root"></div>
-    <!-- Your bundled React app script -->
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Use the dynamic import URL for the image in meta tags
-        document
-          .getElementById("og-image")
-          .setAttribute("content", window.snapshotURL);
-        document
-          .getElementById("twitter-image")
-          .setAttribute("content", window.snapshotURL);
-        document.getElementById("structured-data").textContent = JSON.stringify(
-          {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            name: "Flavien Gaujard",
-            url: "https://flavien-gaujard.fr",
-            image: window.snapshotURL,
-            sameAs: [
-              "https://linkedin.com/in/flavien-gaujard",
-              "https://github.com/fgaujard",
-            ],
-            jobTitle: "Web Developer",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Chartres",
-              addressRegion: "Centre-Val de Loire",
-              addressCountry: "France",
-            },
-          }
-        );
-      });
-    </script>
   </body>
 </html>
