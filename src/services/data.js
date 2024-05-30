@@ -15,10 +15,10 @@ const projectsData = [
     name: "Discovery Of Vue.js",
     tags: ["Vue", "JSX Plugin", "SCSS"],
     date: "May. 2024",
-    description: "I would like to learn Vue.js.",
+    description:
+      "I wanted to learn Vue.js, but I didn't like the basic syntax. So, I integrated the JSX plugin and structured my project in the same way as a React application. This allows me to use React syntax while taking advantage of Vue features such as v-if and v-for.",
     figma: "",
-    github:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FJSu4dJNTuKRMuEcGHo2n9h%2FDIGITAL-ODYSSEY-STUDIO%3Fnode-id%3D43%253A5%26t%3D0wjM00k1yz01klrJ-1",
+    github: "https://github.com/fgaujard/my-vue-template",
     url: "",
     img: Vue,
   },
@@ -27,11 +27,11 @@ const projectsData = [
     name: "Portfolio V.1",
     tags: ["React", "Spline", "SCSS", "GSAP"],
     date: "May. 2024",
-    description: "I would like to learn Vue.js.",
+    description:
+      "I wanted to create my portfolio in an immersive way, with 3D and animations. However, it requires adjustments.",
     figma: "",
-    github:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FJSu4dJNTuKRMuEcGHo2n9h%2FDIGITAL-ODYSSEY-STUDIO%3Fnode-id%3D43%253A5%26t%3D0wjM00k1yz01klrJ-1",
-    url: "https://www.figma.com/proto/JSu4dJNTuKRMuEcGHo2n9h/DIGITAL-ODYSSEY-STUDIO?node-id=397%3A13&t=0wjM00k1yz01klrJ-1",
+    github: "https://github.com/fgaujard/new-portfolio",
+    url: "https://my-portfolio-flavien-gaujard.vercel.app/",
     img: PortfolioV1,
   },
   {
