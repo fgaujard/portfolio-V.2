@@ -41,7 +41,10 @@ export default function SearchEngineOpt() {
         property="og:description"
         content="Explore the portfolio of Flavien Gaujard, a web developer based in Chartres, France. Discover his projects and skills in web development."
       />
-      <meta property="og:image" content={snapshot} />
+      <meta
+        property="og:image"
+        content={`https://flavien-gaujard.com${snapshot}`}
+      />
       <meta property="og:url" content="https://flavien-gaujard.com" />
       <meta property="og:type" content="website" />
 
@@ -55,7 +58,10 @@ export default function SearchEngineOpt() {
         name="twitter:description"
         content="Explore the portfolio of Flavien Gaujard, a web developer based in Chartres, France. Discover his projects and skills in web development."
       />
-      <meta name="twitter:image" content={snapshot} />
+      <meta
+        name="twitter:image"
+        content={`https://flavien-gaujard.com${snapshot}`}
+      />
 
       <link rel="canonical" href="https://flavien-gaujard.fr" />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
